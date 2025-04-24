@@ -1,0 +1,49 @@
+# inheritance-
+
+<script>
+    class Animal {
+        constructor(name ,color){
+       
+        this.name = name
+        this.color = color
+             
+    }
+    run(){
+        console.log(this.name + " is running and its color is " + this.color )
+    }
+    shout(){
+        console.log(this.name + " is Shouting.")
+    }
+    }
+  
+    
+    //inheritance , to change in classes code 
+
+   class  Monkey extends Animal {
+  
+    eatingSource(){
+            console.log(this.name + 'is eating banana')
+        }
+
+    }
+   
+   
+
+ 
+    let monkeyform = new Monkey ("MONKEY" ,"grey")
+    let pandaForm = new Animal("panda" ,"white")
+
+
+
+    monkeyform.eatingSource()
+    monkeyform.run()
+    monkeyform.shout()
+    pandaForm.run()
+    pandaForm.shout()
+
+
+   console.log( monkeyform)
+   console.log(pandaForm)
+   
+
+</script>
